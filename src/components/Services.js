@@ -15,33 +15,34 @@ export default function Services() {
         {/* Section 1: Brick Cleaning */}
         <div className="image-pair">
           <h3>Before</h3>
-          <img src="/beforebrick.jepg" alt="Before Brick cleaning" />
+          <img src="/beforebrick.jpeg" alt="Before Brick cleaning" />
         </div>
         <div className="image-pair">
           <h3>After</h3>
-          <img src="/beforebrick.jepg" alt="After Brick cleaning" />
+          <img src="/beforewall.jpeg" alt="After Brick cleaning" />
         </div>
 
         {/* Section 2: Concrete Cleaning */}
         <div className="image-pair">
           <h3>Before</h3>
-          <img src="/beforeconcrete.jepg" alt="Before Concrete cleaning" />
+          <img src="/beforeconcrete.jpeg" alt="Before Concrete cleaning" />
         </div>
         <div className="image-pair">
           <h3>After</h3>
-          <img src="/beforeconcrete.jepg" alt="After Concrete cleaning" />
+          <img src="/beforewall.jpeg" alt="After Concrete cleaning" />
         </div>
 
         {/* Section 3: Wall Cleaning */}
         <div className="image-pair">
           <h3>Before</h3>
-          <img src="/beforewall.jepg" alt="Before Wall cleaning" />
+          <img src="/beforewall.jpeg" alt="Before Wall cleaning" />
         </div>
         <div className="image-pair">
           <h3>After</h3>
-          <img src="/beforewall.jepg" alt="After Wall cleaning" />
+          <img src="/beforewall.jpeg" alt="After Wall cleaning" />
         </div>
       </div>
     </section>
   );
 }
+
