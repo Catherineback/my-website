@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <nav>
-        <h2>SparkleWash</h2>
+        <h2>BluesExteriorCleaning</h2>
         <div className="nav-links">
           <Link to="/">Home</Link>
           <Link to="/services">Services</Link>
