@@ -19,7 +19,7 @@ export default function Services() {
         </div>
         <div className="image-pair">
           <h3>After</h3>
-          <img src="/beforewall.jpeg" alt="After Brick cleaning" />
+          <img src="/beforebrick.jpeg" alt="After Brick cleaning" />
         </div>
 
         {/* Section 2: Concrete Cleaning */}
@@ -29,7 +29,7 @@ export default function Services() {
         </div>
         <div className="image-pair">
           <h3>After</h3>
-          <img src="/beforewall.jpeg" alt="After Concrete cleaning" />
+          <img src="/beforeconcrete.jpeg" alt="After Concrete cleaning" />
         </div>
 
         {/* Section 3: Wall Cleaning */}
