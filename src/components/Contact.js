@@ -1,13 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export default function Contact() {
-  const [submitted, setSubmitted] = useState(false);
+  const messageTemplate = `Hello,\n\nI’m interested in getting a free estimate for exterior cleaning services. Here are a few details about the job:\n\n- Type of service needed:\n- Address/location:\n- Preferred contact method (call, text, or email):\n- Preferred contact time (morning, afternoon, evening, or specific time):\n\nThank you,\n[Your Name]`;
 
-  function handleSubmit(e) {
-    e.preventDefault();
-    // Here you would normally send form data to a backend or service
-    setSubmitted(true);
-  }
+  const encodedMessage = encodeURIComponent(messageTemplate);
+  const mailtoLink = `mailto:M.Thomas@bluesexteriorcleaning.com?subject=Free Estimate Request&body=${encodedMessage}`;
 
   return (
     <section style={{ maxWidth: '600px', margin: '2rem auto', padding: '0 1rem', fontFamily: 'Arial, sans-serif', color: '#333' }}>
@@ -18,23 +15,29 @@ export default function Contact() {
         <h2>Get in Touch</h2>
         <p><strong>Email:</strong> <a href="mailto:M.Thomas@bluesexteriorcleaning.com">M.Thomas@bluesexteriorcleaning.com</a></p>
         <p><strong>Phone:</strong> <a href="tel:+17605008709">(760)-500-8709</a></p>
-        <p>Feel free to call or email us directly!</p>
       </div>
 
-      {/* Contact Form or Thank You Message */}
-      {submitted ? (
-        <p>Thanks for reaching out! We'll get back to you soon.</p>
-      ) : (
-        <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-          <input type="text" placeholder="Your Name" required style={{ padding: '0.5rem', fontSize: '1rem' }} />
-          <input type="email" placeholder="Your Email" required style={{ padding: '0.5rem', fontSize: '1rem' }} />
-          <textarea placeholder="Your Message" required style={{ padding: '0.5rem', fontSize: '1rem', minHeight: '100px' }}></textarea>
-          <button type="submit" style={{ backgroundColor: '#2980b9', color: 'white', border: 'none', padding: '0.75rem', fontSize: '1rem', borderRadius: '4px', cursor: 'pointer' }}>
-            Send
-          </button>
-        </form>
-      )}
+      {/* Template Message Section */}
+      <div style={{ padding: '1rem', backgroundColor: '#eef6ff', borderRadius: '8px' }}>
+        <h2>Optional Email Template</h2>
+        <p>If you'd like, you can use this optional message template to help us provide a quick and accurate estimate:</p>
+        <pre style={{ backgroundColor: '#fff', padding: '1rem', borderRadius: '4px', whiteSpace: 'pre-wrap' }}>{messageTemplate}</pre>
+        <a 
+          href={mailtoLink}
+          style={{
+            display: 'inline-block',
+            marginTop: '1rem',
+            backgroundColor: '#2980b9',
+            color: 'white',
+            padding: '0.75rem 1.5rem',
+            borderRadius: '4px',
+            textDecoration: 'none',
+            fontSize: '1rem'
+          }}
+        >
+          Send Email with Template
+        </a>
+      </div>
     </section>
   );
 }
-

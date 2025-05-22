@@ -11,16 +11,16 @@ export default function Home() {
       </div>
 
       <p style={styles.paragraph}>
-        Serving the Oceanside area, we specialize in professional pressure washing services
+        Serving San Diego County, we specialize in professional pressure washing services
         for homes, driveways, decks, patios, and more. With top-tier equipment and a dedication
-        to customer satisfaction, we make your property shine—safely and affordably.
+        to customer satisfaction, we make your property shine!
       </p>
 
       <h2 style={styles.subheading}>Why Choose Us</h2>
       <div style={styles.cardGrid}>
         <div style={styles.card}>
-          <h3 style={styles.cardTitle}>Experienced Team</h3>
-          <p style={styles.cardText}>Skilled professionals with years of hands-on cleaning expertise.</p>
+          <h3 style={styles.cardTitle}>Experienced Professional</h3>
+          <p style={styles.cardText}>Skilled professional with hands-on cleaning expertise.</p>
         </div>
         <div style={styles.card}>
           <h3 style={styles.cardTitle}>Eco-Friendly Methods</h3>
@@ -28,7 +28,7 @@ export default function Home() {
         </div>
         <div style={styles.card}>
           <h3 style={styles.cardTitle}>No-Obligation Estimates</h3>
-          <p style={styles.cardText}>Transparent pricing—no surprises, no pressure.</p>
+          <p style={styles.cardText}>Transparent pricing, no surprises, no pressure.</p>
         </div>
         <div style={styles.card}>
           <h3 style={styles.cardTitle}>Satisfaction Guaranteed</h3>
