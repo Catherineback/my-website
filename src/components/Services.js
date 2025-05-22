@@ -8,10 +8,14 @@ export default function Services() {
         Quality exterior cleaning to keep your home looking its best.
       </p>
 
-      <ul style={styles.serviceList}>
-        <li>Driveway and sidewalk cleaning</li>
-        <li>Deck and patio cleaning</li>
-      </ul>
+      <div style={styles.servicesGrid}>
+        <div style={styles.serviceCard}>Pressure / Soft Washing</div>
+        <div style={styles.serviceCard}>Solar Panel Cleaning</div>
+        <div style={styles.serviceCard}>Driveway Cleaning</div>
+        <div style={styles.serviceCard}>Window Cleaning</div>
+        <div style={styles.serviceCard}>Gutter Cleaning</div>
+        <div style={styles.serviceCard}>All Things Exterior Cleaning</div>
+      </div>
 
       <p style={styles.contactText}>Contact us today for a free estimate!</p>
 
@@ -95,15 +99,27 @@ const styles = {
     color: '#7f8c8d',
     fontWeight: '400',
     textAlign: 'center',
-    marginBottom: '1.75rem',
+    marginBottom: '2rem',
   },
-  serviceList: {
-    listStyleType: 'disc',
-    paddingLeft: '1.75rem',
-    fontSize: '1.15rem',
-    lineHeight: 1.6,
-    color: '#2c3e50',
+  servicesGrid: {
+    display: 'grid',
+    gridTemplateColumns: '1fr 1fr',
+    gap: '1.5rem',
     marginBottom: '2.5rem',
+    paddingLeft: '0.5rem',
+    paddingRight: '0.5rem',
+  },
+  serviceCard: {
+    backgroundColor: '#ecf0f1',
+    padding: '1rem',
+    borderRadius: '8px',
+    fontSize: '1.1rem',
+    fontWeight: '500',
+    color: '#2c3e50',
+    boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)',
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem',
   },
   contactText: {
     textAlign: 'center',
