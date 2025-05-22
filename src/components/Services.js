@@ -85,18 +85,18 @@ const styles = {
     margin: '3rem auto',
     padding: '0 1rem',
     fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-    color: '#34495e',
+    color: '#001c55', // Penn Blue text
   },
   title: {
     fontSize: '2.8rem',
     fontWeight: '600',
     marginBottom: '0.75rem',
-    color: '#2c3e50',
+    color: '#0a2472', // Royal Blue title
     textAlign: 'center',
   },
   subtitle: {
     fontSize: '1.2rem',
-    color: '#7f8c8d',
+    color: '#0e6ba8', // Bice Blue subtitle
     fontWeight: '400',
     textAlign: 'center',
     marginBottom: '2rem',
@@ -110,12 +110,12 @@ const styles = {
     paddingRight: '0.5rem',
   },
   serviceCard: {
-    backgroundColor: '#ecf0f1',
+    backgroundColor: '#f0f0f0', // Light grey background
     padding: '1rem',
     borderRadius: '8px',
     fontSize: '1.1rem',
     fontWeight: '500',
-    color: '#2c3e50',
+    color: '#001c55', // Penn Blue text for contrast
     boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)',
     display: 'flex',
     alignItems: 'center',
@@ -126,7 +126,7 @@ const styles = {
     marginTop: '1rem',
     fontWeight: '600',
     fontSize: '1.15rem',
-    color: '#2980b9',
+    color: '#0e6ba8', // Bice Blue call to action
     marginBottom: '3rem',
   },
   beforeAfterTitle: {
@@ -134,7 +134,7 @@ const styles = {
     fontWeight: '700',
     marginBottom: '2rem',
     textAlign: 'center',
-    color: '#2c3e50',
+    color: '#001c55', // Penn Blue heading
   },
   grid: {
     display: 'grid',
@@ -150,7 +150,7 @@ const styles = {
   imageCaption: {
     fontSize: '1.2rem',
     marginBottom: '0.75rem',
-    color: '#2c3e50',
+    color: '#0a2472', // Royal Blue captions
     fontWeight: '600',
   },
   image: {
